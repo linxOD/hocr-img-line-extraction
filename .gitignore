@@ -1,0 +1,4 @@
+/env
+/my_img/ground-truth
+/my_img/*.tif
+/my_img/*.png
