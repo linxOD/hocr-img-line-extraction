@@ -9,6 +9,14 @@ see /scripts/install_dep.sh and /scripts/install_tesseract.sh
 * hocr-tools
 * rename
 * tesseract-ocr
+* create environment variables $TESSDATA_PREFIX and $MODEL_LANG
+
+### Environment variables examples
+
+`export TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata`
+`export MODEL_LANG=deu`
+
+see [Tesseract documentation](https://tesseract-ocr.github.io/tessdoc/Installation.html) for more information
 
 ## Usage
 

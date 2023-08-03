@@ -1,9 +1,7 @@
 # bin/bash
 
-#####! create python environment with `python -m venv env` | source ven/bin/activate !####
-
 SOURCE="./my_img/"
-lang=deu_frak
+lang=$MODEL_LANG
 echo $TESSDATA_PREFIX # create env variable pointint to tessdata with traineddata files
 set -- "$SOURCE"*.tif
 for img_file; do
