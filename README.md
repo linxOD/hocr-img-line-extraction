@@ -31,6 +31,9 @@ see /scripts/install_dep.sh and /scripts/install_tesseract.sh
 
 Output files have to be manually checked and cleaned. Verify *.gt.txt files compared to *.png or *.tif files if OCR recognition is correct. Remove *.png or *.tif and *.gt.txt files of wrongly recognized text lines.
 
+## Acknowledgments
+https://github.com/tesseract-ocr/tesstrain/issues/7#issuecomment-419714852
+
 ## License
 [MIT](LICENSE)
 
