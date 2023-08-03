@@ -9,15 +9,15 @@ see `/scripts/install_dep.sh` and `/scripts/install_tesseract.sh`
 * hocr-tools
 * rename
 * tesseract-ocr
-* create environment variables $TESSDATA_PREFIX, $MODEL_LANG and IMG_EXT
+* create environment variables TESSDATA_PREFIX, MODEL_LANG and IMG_EXT
 
 The IMG_EXT variable is used to determine the image file extension of the input images. If you want to use .png images, set IMG_EXT to .png. If you want to use .tif images, set IMG_EXT to .tif.
 
 ### Environment variables examples
 
-`export TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata`
-`export MODEL_LANG=deu`
-`export IMG_EXT=tif`
+* `export TESSDATA_PREFIX=/usr/share/tesseract-ocr/4.00/tessdata`
+* `export MODEL_LANG=deu`
+* `export IMG_EXT=tif`
 
 see [Tesseract documentation](https://tesseract-ocr.github.io/tessdoc/Installation.html) for more information
 
@@ -30,7 +30,7 @@ see [Tesseract documentation](https://tesseract-ocr.github.io/tessdoc/Installati
 ## Output
 
 * hocr files in `/my_img/my_hocr`
-* extracted text lines as images and text in /my_img/ground-truth
+* extracted text lines as images and text in `/my_img/ground-truth`
 
 ## Example
 
