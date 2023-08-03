@@ -25,7 +25,7 @@ see /scripts/install_dep.sh and /scripts/install_tesseract.sh
 
 * input image: /my_img/0001.tif
 * output hocr file: /my_img/my_hocr/0001.hocr
-* output text line images: /my_img/ground-truth/0001_0001.png, /my_img/ground-truth/0001_0002.gt.txt
+* output text line images: /my_img/ground-truth/0001_0001.itf, /my_img/ground-truth/0001_0002.gt.txt
 
 ## Cleaning
 
