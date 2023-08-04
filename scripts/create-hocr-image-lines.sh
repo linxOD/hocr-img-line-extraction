@@ -6,7 +6,7 @@ ext=$IMG_EXT
 echo $IMG_EXT
 echo $lang
 echo $TESSDATA_PREFIX # create env variable pointint to tessdata with traineddata files
-set -- "$source"*."$ext"
+set -- "$source"*.$IMG_EXT
 for img_file; do
     echo -e  "\r\n File: $img_file"
     OMP_THREAD_LIMIT=1 tesseract --tessdata-dir $TESSDATA_PREFIX "${img_file}" "${img_file%.*}"  --psm 6  --oem 1  -l $lang -c page_separator='' hocr
