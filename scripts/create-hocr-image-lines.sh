@@ -14,10 +14,12 @@ for img_file; do
 done
 
 rename s/exp0.txt/exp0.gt.txt/ ./my_img/*exp0.txt
-mkdir ./my_img/ground-truth
-mv ./my_img/*exp0.gt.txt ./my_img/ground-truth/
-mv ./my_img/*exp0.tif ./my_img/ground-truth/
+mkdir ./my_img/$MODEL_NAME-ground-truth
+mv ./my_img/*exp0.gt.txt ./my_img/$MODEL_NAME-ground-truth/
+mv ./my_img/*exp0.tif ./my_img/$MODEL_NAME-ground-truth/
 mkdir ./my_img/my_hocr
 mv ./my_img/*.hocr ./my_img/my_hocr/
+
+cp -r ./my_img/$MODEL_NAME-ground-truth /code/tesstrain-main/data
 
 echo "Image files converted to tif. Correct the ground truth files and then run ocr-d train to create box and lstmf files"
